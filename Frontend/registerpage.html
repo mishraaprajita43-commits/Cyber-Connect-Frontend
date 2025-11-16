@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberConnect | Sign Up</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #06163A, #030B23);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .signup-container {
+      background: rgba(20, 30, 60, 0.85);
+      padding: 40px;
+      border-radius: 18px;
+      width: 380px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 120, 255, 0.25);
+      box-shadow: 0 0 30px rgba(0, 120, 255, 0.25);
+      transition: 0.3s ease;
+    }
+
+    .signup-container:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 45px rgba(0, 140, 255, 0.35);
+    }
+
+    .signup-container h2 {
+      margin-bottom: 18px;
+      color: #3da9fc;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px rgba(61, 169, 252, 0.8);
+    }
+
+    .signup-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    .signup-container input:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(61, 169, 252, 0.6);
+      box-shadow: 0 0 10px rgba(61, 169, 252, 0.6);
+    }
+
+    .signup-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      background: linear-gradient(90deg, #3da9fc, #0078ff);
+      transition: 0.3s ease;
+    }
+
+    .signup-container button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 18px rgba(61, 169, 252, 0.7);
+    }
+
+    .signup-container p {
+      margin-top: 15px;
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .signup-container a {
+      color: #3da9fc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    @media (max-width: 450px) {
+      .signup-container {
+        width: 90%;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="signup-container">
+    <h2>Create Your Account</h2>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Confirm Password" required>
+
+    <button>Sign Up</button>
+
+    <p>Already have an account? <a href="#">Login</a></p>
+  </div>
+</body>
+</html>
